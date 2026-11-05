@@ -1,29 +1,28 @@
 # khanplus-live-update
 Private live-update hosting for the KHAN PLUS launcher.
 # Live update setup
+ตัวเรียกใช้งาน (Launcher) จะอ่านข้อมูลจากไฟล์ `KhanUpdate.url` ซึ่งวางอยู่ข้างไฟล์ EXE ของตัวเรียกใช้งาน โดยบรรทัดแรกของไฟล์นี้จะต้องระบุ URL (แบบ HTTPS) ของไฟล์ `manifest.txt` ที่โฮสต์ไว้ สำหรับ GitHub URL ที่กำหนดไว้คือ `https://raw.githubusercontent.com/viruss2501-arch/khanplus-live-update/main/manifest.txt`
 
-The launcher reads `KhanUpdate.url` beside its EXE. Put the HTTPS URL of the hosted `manifest.txt` on its first line. The configured GitHub URL is `https://raw.githubusercontent.com/viruss2501-arch/khanplus-live-update/main/manifest.txt`.
+ให้รันไฟล์ `build.bat` เพื่อสร้าง `KhanLauncher.LiveUpdate.exe` และจัดเตรียมโฟลเดอร์ `KhanUpdatePackage` จากนั้นให้อัปโหลด **เนื้อหาทั้งหมด** ภายในโฟลเดอร์ดังกล่าวไปยังรูท (Root) ของ GitHub repository สาธารณะที่ชื่อ `viruss2501-arch/khanplus-live-update` บนสาขา (Branch) `main` โดยต้องคงโครงสร้างพาธเดิมไว้ (เช่น `data/` และ `Save/`) และห้ามนำไฟล์ไปใส่ไว้ในโฟลเดอร์ย่อยอื่นเพิ่มเติม ทั้งนี้ ไฟล์ `manifest.txt` ที่โฮสต์ไว้จะต้องสามารถเข้าถึงได้ผ่าน URL ที่ระบุไว้ในไฟล์ `KhanUpdate.url`
 
-Run `build.bat` to build `KhanLauncher.LiveUpdate.exe` and prepare `KhanUpdatePackage`. Upload the **contents** of that folder to the root of the public GitHub repository `viruss2501-arch/khanplus-live-update` on its `main` branch. Preserve the relative paths, including `data/` and `Save/`; do not put the files inside an extra package subfolder. The hosted `manifest.txt` must be reachable at the URL entered in `KhanUpdate.url`.
+ไฟล์ `KhanUpdate.url` เป็นเพียงไฟล์ตั้งค่าขนาดเล็ก ไม่ใช่หน้าต่างของตัวเรียกใช้งานหรือรายงานเกี่ยวกับตัวเกม คุณสามารถตั้งค่าให้ไฟล์นี้ซ่อนอยู่ใน File Explorer ได้โดยไม่ส่งผลกระทบต่อการอัปเดต โดยคลิกขวาที่ไฟล์ เลือก **Properties (คุณสมบัติ)** ติ๊กถูกที่ช่อง **Hidden (ซ่อน)** แล้วกด **Apply (นำไปใช้)**
 
-`KhanUpdate.url` is a small settings file, not a launcher window or game report. It can be hidden in File Explorer without affecting updates: right-click it, choose **Properties**, check **Hidden**, then click **Apply**.
+ตัวเรียกใช้งานจะเรียกไฟล์ EXE ของเกม (เช่น `KhanPlus.exe` หรือชื่ออื่นที่รองรับ) โดยตรง โดยใช้โฟลเดอร์ของเกมเป็นไดเรกทอรีการทำงาน (Working Directory) ผู้ใช้ไม่จำเป็นต้องเลือกไฟล์ `.exe` เอง ส่วนไฟล์ `data/.kp0` นั้นเป็นข้อมูลของตัวเกม ไม่ใช่โปรแกรมที่สามารถรันได้โดยตรง สำหรับไฟล์ `khan.ico` จะถูกฝังไว้ในตัวเรียกใช้งานเพื่อใช้เป็นไอคอนของไฟล์และไอคอนของหน้าต่างโปรแกรม
 
-The launcher starts the game's Windows executable (`KhanPlus.exe`, with known alternatives) directly, using the game folder as its working directory; it does not ask the user to browse for a separate `.exe`. `data/.kp0` is game data, not a runnable program. The `khan.ico` file is embedded into the launcher for both its file and window icon.
-
-The manifest format is UTF-8 text:
+รูปแบบของไฟล์ Manifest จะเป็นข้อความแบบ UTF-8 ดังนี้:
 
 ```text
 KHANUPDATE/1
-<64-character SHA-256><TAB>DeviceInfo.dif
-<64-character SHA-256><TAB>data/Msg/EmotiMsg.bin
+<SHA-256 ความยาว 64 ตัวอักษร><TAB>DeviceInfo.dif
+<SHA-256 ความยาว 64 ตัวอักษร><TAB>data/Msg/EmotiMsg.bin
 ```
 
-The package builder includes `KhanPlus.exe` and copies the built launcher to `IZRGulid.exe`, then generates manifest entries and hashes for all files, including files found below `data/Effect/` and `data/EffectData/`. Rebuild and re-upload the package whenever source data changes. The launcher requires all 34 fixed paths and permits additional paths only below those two asset directories (up to 1,024 asset files total), downloads changed files over HTTPS, verifies their SHA-256 hashes, stages downloads before replacing files, and does not create `.launcher-backup` files.
+กระบวนการสร้างแพ็กเกจจะรวมไฟล์ `KhanPlus.exe` เข้าไปด้วย พร้อมทั้งคัดลอกตัวเรียกใช้งานที่สร้างขึ้นมาเป็นไฟล์ `IZRGulid.exe` จากนั้นจะสร้างรายการในไฟล์ Manifest พร้อมคำนวณค่าแฮช (Hash) ให้กับไฟล์ทั้งหมด รวมถึงไฟล์ที่อยู่ใน `data/Effect/` และ `data/EffectData/` ด้วย ทั้งนี้ หากมีการเปลี่ยนแปลงข้อมูลต้นทาง คุณจำเป็นต้องสร้างแพ็กเกจใหม่และอัปโหลดขึ้นไปแทนที่ของเดิมเสมอ ตัวเรียกใช้งานต้องการเส้นทางคงที่ทั้ง 34 เส้นทาง และอนุญาตให้มีเส้นทางเพิ่มเติมได้เฉพาะภายใต้ไดเร็กทอรีสินทรัพย์สองไดเร็กทอรีนั้นเท่านั้น (รวมไฟล์สินทรัพย์ได้สูงสุด 1,024 ไฟล์) ดาวน์โหลดไฟล์ที่เปลี่ยนแปลงผ่าน HTTPS ตรวจสอบค่าแฮช SHA-256 จัดเตรียมการดาวน์โหลดก่อนที่จะแทนที่ไฟล์ และไม่สร้าง `.ไฟล์ `launcher-backup`
 
-## Adding files in a future update
+## การเพิ่มไฟล์ในการอัปเดตในอนาคต
 
-- For a new file under `data/Effect/` or `data/EffectData/`, put it in that source folder and run `build.bat`; the package builder discovers those folders recursively and adds each file and hash to `manifest.txt`.
-- For a file at any other path, add its relative path (using Windows `\` separators) both to the `UpdateFiles` array in `Test.Mini.DarkThai.Net40.V4.AutoResize.cs` and to `$relativePaths` in `Build-UpdatePackage.ps1`. Put the source file at that relative path in the project folder, then run `build.bat`.
-- Upload the changed/new file(s) from `KhanUpdatePackage` to the same relative paths at the repository root, and upload the new `manifest.txt` last. Do not upload the entire project folder or place package files in an extra nested directory.
+- สำหรับไฟล์ใหม่ที่อยู่ภายใต้ `data/Effect/` หรือ `data/EffectData/` ให้วางไฟล์ไว้ในโฟลเดอร์ต้นทางดังกล่าวแล้วเรียกใช้ `build.bat` โดยโปรแกรมสร้างแพ็กเกจจะตรวจสอบโฟลเดอร์เหล่านี้แบบเรียกซ้ำ (recursively) พร้อมทั้งเพิ่มไฟล์และค่าแฮช (hash) แต่ละรายการลงใน `manifest.txt`
+- สำหรับไฟล์ที่อยู่ในพาธอื่น ให้เพิ่มพาธสัมพัทธ์ (relative path) ของไฟล์นั้น (โดยใช้เครื่องหมาย `\` ตามรูปแบบของ Windows) ลงในอาร์เรย์ `UpdateFiles` ในไฟล์ `Test.Mini.DarkThai.Net40.V4.AutoResize.cs` และเพิ่มลงในตัวแปร `$relativePaths` ในไฟล์ `Build-UpdatePackage.ps1` จากนั้นวางไฟล์ต้นทางไว้ตามพาธสัมพัทธ์นั้นภายในโฟลเดอร์โปรเจกต์ แล้วเรียกใช้ `build.bat`
+- อัปโหลดไฟล์ที่เปลี่ยนแปลงหรือไฟล์ใหม่จาก `KhanUpdatePackage` ไปยังพาธสัมพัทธ์เดียวกันที่รูท (root) ของรีโพสิทอรี และอัปโหลดไฟล์ `manifest.txt` ฉบับใหม่เป็นลำดับสุดท้าย ทั้งนี้ ห้ามอัปโหลดโฟลเดอร์โปรเจกต์ทั้งหมดขึ้นไป หรือวางไฟล์แพ็กเกจไว้ในไดเรกทอรีที่ซ้อนอยู่ภายในโฟลเดอร์อื่นอีกชั้นหนึ่ง
 
-SHA-256 detects incomplete or altered downloads relative to the manifest. HTTPS protects the connection, but this design does not authenticate a compromised hosting account or a malicious manifest served by the configured host. Use a protected hosting account; signed manifests should be added before treating the host as untrusted.
+การใช้ SHA-256 ช่วยตรวจพบกรณีที่ไฟล์ดาวน์โหลดมาไม่ครบถ้วนหรือถูกแก้ไขไปจากข้อมูลที่ระบุในไฟล์ manifest แม้ว่า HTTPS จะช่วยปกป้องการเชื่อมต่อ แต่การออกแบบนี้ยังไม่สามารถยืนยันความถูกต้องได้ในกรณีที่บัญชีโฮสติ้งถูกบุกรุก หรือมีการใช้ไฟล์ manifest ที่เป็นอันตรายจากโฮสต์ที่กำหนดไว้ ดังนั้นควรใช้บัญชีโฮสติ้งที่มีมาตรการป้องกันที่เหมาะสม และควรเพิ่มกลไกการลงลายมือชื่อดิจิทัล (signed manifests) ก่อนที่จะพิจารณาว่าโฮสต์ดังกล่าวอาจเป็นแหล่งที่ไม่น่าเชื่อถือ
