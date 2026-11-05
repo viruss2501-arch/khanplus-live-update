@@ -1,0 +1,57 @@
+[General]
+OutputAPI = D3D9
+
+[GeneralExt]
+EnableGDIHooking = true
+
+[DirectX]
+DisableMipmapping  = true
+DisableAndPassThru                  = false
+VideoCard                           = internal3D
+VRAM                                = 256
+Filtering                           = appdriven
+Mipmapping                          = disabled
+KeepFilterIfPointSampled            = false
+Resolution                          = unforced
+Antialiasing                        = appdriven
+AppControlledScreenMode             = true
+DisableAltEnterToToggleScreenMode   = true
+Bilinear2DOperations                = false
+PhongShadingWhenPossible            = false
+ForceVerticalSync                   = false
+dgVoodooWatermark                   = true
+FastVideoMemoryAccess               = false
+
+[DirectXExt]
+PrimarySurfaceBatchedUpdate = true
+
+[General]
+; แก้ไข: ใช้ d3d9 เพื่อเรียกใช้ dx9 wrapper หรือใช้ bestavailable
+OutputAPI                           = d3d9
+LoadCustomDllPath                   = d3dx9_43.dll
+
+[Compatibility]
+EnableD3d9Wrapper                   = 1
+D3d8to9                             = 1
+; แนะนำให้เปิดตัวนี้ถ้าเกมเก่ามาก
+EnableDDrawWrapper                  = 1 
+
+[d3d9]
+AnisotropicFiltering                = 1
+AntiAliasing                        = 0
+EnableVSync                         = 1
+; ช่วยให้เล่นแบบเต็มหน้าจอแต่สลับจอไปมาได้ลื่นๆ
+FullscreenWindowMode                = 1 
+
+[GeneralExt]
+; เปิดไว้ช่วยเรื่องการแสดงผลเมนูหรือ UI เก่าๆ
+EnableGDIHooking                    = true
+
+[DirectX]
+DisableMipmapping                   = true
+khanaticwm                          = false
+; แก้ไข: ต้องเป็น false เพื่อให้ dxwrapper ประมวลผลคำสั่ง ไม่ใช่แค่ปล่อยผ่าน
+DisableAndPassThru                  = false
+
+[DirectXExt]
+PrimarySurfaceBatchedUpdate         = true

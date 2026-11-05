@@ -1,0 +1,437 @@
+0-void
+0 0
+1--경장
+171 9
+eff/armerd1.dds 0
+eff/armerd2.dds 0
+eff/armerd3.dds 0
+eff/armerd4.dds 0
+eff/armerd5.dds 0
+eff/armerd6.dds 0
+eff/armerd7.dds 0
+eff/armerd8.dds 0
+eff/armerd9.dds 0
+2--중장
+180 9
+eff/armerd1-h.dds 0
+eff/armerd2-h.dds 0
+eff/armerd3-h.dds 0
+eff/armerd4-h.dds 0
+eff/armerd5-h.dds 0
+eff/armerd6-h.dds 0
+eff/armerd7-h.dds 0
+eff/armerd8-h.dds 0
+eff/armerd9-h.dds 0
+3-경장시작 
+189 5
+eff/gablow1.dds 0
+eff/gablow2.dds 0
+eff/gablow3.dds 0
+eff/gablow4.dds 0
+eff/gablow5.dds 0
+4-중장시작
+194 5
+eff/gablow1-h.dds 0
+eff/gablow2-h.dds 0
+eff/gablow3-h.dds 0
+eff/gablow4-h.dds 0
+eff/gablow5-h.dds 0
+5-마비시작
+203 8
+eff/st1.dds 0
+eff/st2.dds 0
+eff/st3.dds 0
+eff/st4.dds 0
+eff/st5.dds 0
+eff/st6.dds 0
+eff/st7.dds 0
+eff/st8.dds 0
+6-마비작동
+211 9
+eff/dizz1.dds 0
+eff/dizz2.dds 0
+eff/dizz3.dds 0
+eff/dizz4.dds 0
+eff/dizz5.dds 0
+eff/dizz6.dds 0
+eff/dizz7.dds 0
+eff/dizz8.dds 0
+eff/dizz9.dds 0
+7-스턴
+220 12
+eff/dizy1.dds 0
+eff/dizy2.dds 0
+eff/dizy3.dds 0
+eff/dizy4.dds 0
+eff/dizy5.dds 0
+eff/dizy6.dds 0
+eff/dizy7.dds 0
+eff/dizy8.dds 0
+eff/dizy9.dds 0
+eff/dizy10.dds 0
+eff/dizy11.dds 0
+eff/dizy12.dds 0
+8-bm
+232 3
+eff/bm1.dds 0
+eff/bm2.dds 0
+eff/bm3.dds 0
+23-메테오폭팔
+241 14
+eff/mblow1.dds 0
+eff/mblow2.dds 0
+eff/mblow3.dds 0
+eff/mblow4.dds 0
+eff/mblow5.dds 0
+eff/mblow6.dds 0
+eff/mblow7.dds 0
+eff/mblow8.dds 0
+eff/mblow9.dds 0
+eff/mblow10.dds 0
+eff/mblow11.dds 0
+eff/mblow12.dds 0
+eff/mblow13.dds 0
+eff/mblow14.dds 0
+9-선더스파크폭팔
+258 14
+eff/thunder_spark/spark_bs1.dds 0
+eff/thunder_spark/spark_bs2.dds 0
+eff/thunder_spark/spark_bs3.dds 0
+eff/thunder_spark/spark_bs4.dds 0
+eff/thunder_spark/spark_bs5.dds 0
+eff/thunder_spark/spark_bs6.dds 0
+eff/thunder_spark/spark_bw1.dds 0
+eff/thunder_spark/spark_bw2.dds 0
+eff/thunder_spark/spark_bw3.dds 0
+eff/thunder_spark/spark_bw4.dds 0
+eff/thunder_spark/spark_bw5.dds 0
+eff/thunder_spark/spark_bw6.dds 0
+eff/thunder_spark/spark_bw7.dds 0
+eff/thunder_spark/spark_bw8.dds 0
+10-선더스파크이동
+272 8
+eff/thunder_spark/spark_light1.dds 0
+eff/thunder_spark/spark_light2.dds 0
+eff/thunder_spark/spark_light3.dds 0
+eff/thunder_spark/spark_light4.dds 0
+eff/thunder_spark/spark_light5.dds 0
+eff/thunder_spark/spark_light6.dds 0
+eff/thunder_spark/spark_light7.dds 0
+eff/thunder_spark/spark_light8.dds 0
+11-본쉴드스파크
+280 9
+eff/Shield/bone_shiled1.dds 0
+eff/Shield/bone_shiled2.dds 0
+eff/Shield/bone_shiled3.dds 0
+eff/Shield/bone_shiled4.dds 0
+eff/Shield/bone_shiled5.dds 0
+eff/Shield/bone_shiled6.dds 0
+eff/Shield/bone_shiled7.dds 0
+eff/Shield/bone_shiled8.dds 0
+eff/Shield/bone_shiled9.dds 0
+12-저주본아머볼
+289 9
+eff/Shield/cba_ball1.dds 0
+eff/Shield/cba_ball2.dds 0
+eff/Shield/cba_ball3.dds 0
+eff/Shield/cba_ball4.dds 0
+eff/Shield/cba_ball5.dds 0
+eff/Shield/cba_ball6.dds 0
+eff/Shield/cba_ball7.dds 0
+eff/Shield/cba_ball8.dds 0
+eff/Shield/cba_ball9.dds 0
+13-저주본아머써클
+298 7
+eff/Shield/cba_circle1.dds 0
+eff/Shield/cba_circle2.dds 0
+eff/Shield/cba_circle3.dds 0
+eff/Shield/cba_circle4.dds 0
+eff/Shield/cba_circle5.dds 0
+eff/Shield/cba_circle6.dds 0
+eff/Shield/cba_circle7.dds 0
+14-저주본아머쉴드
+305 9
+eff/Shield/cba_shiled1.dds 0
+eff/Shield/cba_shiled2.dds 0
+eff/Shield/cba_shiled3.dds 0
+eff/Shield/cba_shiled4.dds 0
+eff/Shield/cba_shiled5.dds 0
+eff/Shield/cba_shiled6.dds 0
+eff/Shield/cba_shiled7.dds 0
+eff/Shield/cba_shiled8.dds 0
+eff/Shield/cba_shiled9.dds 0
+15-에너쥐실드 
+314 9
+eff/Shield/energe_shiled1.dds 0
+eff/Shield/energe_shiled2.dds 0
+eff/Shield/energe_shiled3.dds 0
+eff/Shield/energe_shiled4.dds 0
+eff/Shield/energe_shiled5.dds 0
+eff/Shield/energe_shiled6.dds 0
+eff/Shield/energe_shiled7.dds 0
+eff/Shield/energe_shiled8.dds 0
+eff/Shield/energe_shiled9.dds 0
+16-에너쥐써클
+323 7
+eff/Shield/energy_circle1.dds 0
+eff/Shield/energy_circle2.dds 0
+eff/Shield/energy_circle3.dds 0
+eff/Shield/energy_circle4.dds 0
+eff/Shield/energy_circle5.dds 0
+eff/Shield/energy_circle6.dds 0
+eff/Shield/energy_circle7.dds 0
+17-light쉴드
+330 9
+eff/Shield/light_shiled1.dds 0
+eff/Shield/light_shiled2.dds 0
+eff/Shield/light_shiled3.dds 0
+eff/Shield/light_shiled4.dds 0
+eff/Shield/light_shiled5.dds 0
+eff/Shield/light_shiled6.dds 0
+eff/Shield/light_shiled7.dds 0
+eff/Shield/light_shiled8.dds 0
+eff/Shield/light_shiled9.dds 0
+18-bearstrStart
+339 5
+eff/BearStr/beargablow1.dds 0
+eff/BearStr/beargablow2.dds 0
+eff/BearStr/beargablow3.dds 0
+eff/BearStr/beargablow4.dds 0
+eff/BearStr/beargablow5.dds 0
+19-BearStr작동
+344 9
+eff/BearStr/beararmerd1.dds 0
+eff/BearStr/beararmerd2.dds 0
+eff/BearStr/beararmerd3.dds 0
+eff/BearStr/beararmerd4.dds 0
+eff/BearStr/beararmerd5.dds 0
+eff/BearStr/beararmerd6.dds 0
+eff/BearStr/beararmerd7.dds 0
+eff/BearStr/beararmerd8.dds 0
+eff/BearStr/beararmerd9.dds 0
+20-FireBall
+42 5
+eff/fire/fire0004.dds 0
+eff/fire/fire0005.dds 0
+eff/fire/fire0006.dds 0
+eff/fire/fire0009.dds 0
+eff/fire/fire0009.dds 0
+21-Drain
+354 9
+eff/drain/drain1.dds 0
+eff/drain/drain2.dds 0
+eff/drain/drain3.dds 0
+eff/drain/drain4.dds 0
+eff/drain/drain5.dds 0
+eff/drain/drain6.dds 0
+eff/drain/drain7.dds 0
+eff/drain/drain8.dds 0
+eff/drain/drain9.dds 0
+22-Drainpow
+363 6
+eff/drain/drainpow1.dds 0
+eff/drain/drainpow2.dds 0
+eff/drain/drainpow3.dds 0
+eff/drain/drainpow4.dds 0
+eff/drain/drainpow5.dds 0
+eff/drain/drainpow6.dds 0
+23-Spiritball
+372 5
+eff/BS_BH/ball1.dds 0
+eff/BS_BH/ball2.dds 0
+eff/BS_BH/ball3.dds 0
+eff/BS_BH/ball4.dds 0
+eff/BS_BH/ball5.dds 0
+24-BHallHit
+377 9
+eff/BS_BH/blow1.dds 0
+eff/BS_BH/blow2.dds 0
+eff/BS_BH/blow3.dds 0
+eff/BS_BH/blow4.dds 0
+eff/BS_BH/blow5.dds 0
+eff/BS_BH/blow6.dds 0
+eff/BS_BH/blow7.dds 0
+eff/BS_BH/blow8.dds 0
+eff/BS_BH/blow9.dds 0
+25-spiritHit
+386 9
+eff/BS_BH/boom1.dds 0
+eff/BS_BH/boom2.dds 0
+eff/BS_BH/boom3.dds 0
+eff/BS_BH/boom4.dds 0
+eff/BS_BH/boom5.dds 0
+eff/BS_BH/boom6.dds 0
+eff/BS_BH/boom7.dds 0
+eff/BS_BH/boom8.dds 0
+eff/BS_BH/boom9.dds 0
+26-white-mak1
+395 9
+eff/mak/white/fallp1.dds 0
+eff/mak/white/fallp2.dds 0
+eff/mak/white/fallp3.dds 0
+eff/mak/white/fallp4.dds 0
+eff/mak/white/fallp5.dds 0
+eff/mak/white/fallp6.dds 0
+eff/mak/white/fallp7.dds 0
+eff/mak/white/fallp8.dds 0
+eff/mak/white/fallp9.dds 0
+27-vio-mak1
+404 9
+eff/mak/vio/fallp1.dds 0
+eff/mak/vio/fallp2.dds 0
+eff/mak/vio/fallp3.dds 0
+eff/mak/vio/fallp4.dds 0
+eff/mak/vio/fallp5.dds 0
+eff/mak/vio/fallp6.dds 0
+eff/mak/vio/fallp7.dds 0
+eff/mak/vio/fallp8.dds 0
+eff/mak/vio/fallp9.dds 0
+28-black-mak1
+413 9
+eff/mak/black/fallp1.dds 0
+eff/mak/black/fallp2.dds 0
+eff/mak/black/fallp3.dds 0
+eff/mak/black/fallp4.dds 0
+eff/mak/black/fallp5.dds 0
+eff/mak/black/fallp6.dds 0
+eff/mak/black/fallp7.dds 0
+eff/mak/black/fallp8.dds 0
+eff/mak/black/fallp9.dds 0
+29-white-mak2
+422 6
+eff/mak/white/lingp1.dds 0
+eff/mak/white/lingp2.dds 0
+eff/mak/white/lingp3.dds 0
+eff/mak/white/lingp4.dds 0
+eff/mak/white/lingp5.dds 0
+eff/mak/white/lingp6.dds 0
+30-vio-mak2
+428 6
+eff/mak/vio/lingp1.dds 0
+eff/mak/vio/lingp2.dds 0
+eff/mak/vio/lingp3.dds 0
+eff/mak/vio/lingp4.dds 0
+eff/mak/vio/lingp5.dds 0
+eff/mak/vio/lingp6.dds 0
+31-black-mak2
+434 6
+eff/mak/black/lingp1.dds 0
+eff/mak/black/lingp2.dds 0
+eff/mak/black/lingp3.dds 0
+eff/mak/black/lingp4.dds 0
+eff/mak/black/lingp5.dds 0
+eff/mak/black/lingp6.dds 0
+32-green-mak1
+440 9
+eff/mak/green/fallp1.dds 0
+eff/mak/green/fallp2.dds 0
+eff/mak/green/fallp3.dds 0
+eff/mak/green/fallp4.dds 0
+eff/mak/green/fallp5.dds 0
+eff/mak/green/fallp6.dds 0
+eff/mak/green/fallp7.dds 0
+eff/mak/green/fallp8.dds 0
+eff/mak/green/fallp9.dds 0
+33-green-mak2
+449 6
+eff/mak/green/lingp1.dds 0
+eff/mak/green/lingp2.dds 0
+eff/mak/green/lingp3.dds 0
+eff/mak/green/lingp4.dds 0
+eff/mak/green/lingp5.dds 0
+eff/mak/green/lingp6.dds 0
+34-전기발사
+0 1
+eff/lightningbolt.bmp 10
+35-전기
+0 5
+eff/light/lighting001.bmp 0
+eff/light/lighting002.bmp 0
+eff/light/lighting003.bmp 0
+eff/light/lighting004.bmp 0
+eff/light/lighting005.bmp 0
+36-light
+0 5
+eff/blow/blownm0002.bmp 10
+eff/blow/blownm0003.bmp 10
+eff/blow/blownm0004.bmp 10
+eff/blow/blownm0005.bmp 10
+eff/blow/blownm0006.bmp 10
+37-lightsheild
+0 1
+eff/source/shainning01.bmp 10
+38-elect1
+0 8
+eff/source/elec01.bmp 10
+eff/source/elec02.bmp 10
+eff/source/elec03.bmp 10
+eff/source/elec04.bmp 10
+eff/source/elec05.bmp 10
+eff/source/elec06.bmp 10
+eff/source/elec07.bmp 10
+eff/source/elec08.bmp 10
+39-exp1
+0 6
+eff/source/recoveryhealth1.bmp 10
+eff/source/recoveryhealth2.bmp 10
+eff/source/recoveryhealth3.bmp 10
+eff/source/recoveryhealth4.bmp 10
+eff/source/recoveryhealth5.bmp 10
+eff/source/recoveryhealth6.bmp 10
+40-electsp
+0 5
+eff/source/electsp1.bmp 10
+eff/source/electsp2.bmp 10
+eff/source/electsp3.bmp 10
+eff/source/electsp4.bmp 10
+eff/source/electsp5.bmp 10
+41-firedeath
+0 5
+eff/source/fireofdeath1.bmp 10
+eff/source/fireofdeath2.bmp 10
+eff/source/fireofdeath3.bmp 10
+eff/source/fireofdeath4.bmp 10
+eff/source/fireofdeath5.bmp 10
+42-star
+0 8
+eff/source/star01.bmp 10
+eff/source/star02.bmp 10
+eff/source/star03.bmp 10
+eff/source/star04.bmp 10
+eff/source/star05.bmp 10
+eff/source/star06.bmp 10
+eff/source/star07.bmp 10
+eff/source/star08.bmp 10
+43-ball
+0 10
+eff/source/ball01.bmp 10
+eff/source/ball02.bmp 10
+eff/source/ball03.bmp 10
+eff/source/ball04.bmp 10
+eff/source/ball05.bmp 10
+eff/source/ball06.bmp 10
+eff/source/ball07.bmp 10
+eff/source/ball08.bmp 10
+eff/source/ball09.bmp 10
+eff/source/ball0a.bmp 10
+44-HIT1
+0 8
+eff/blow2/blownm0001.dds 10
+eff/blow2/blownm0002.dds 10
+eff/blow2/blownm0003.dds 10
+eff/blow2/blownm0004.dds 10
+eff/blow2/blownm0005.dds 10
+eff/blow2/blownm0006.dds 10
+eff/blow2/blownm0007.dds 10
+eff/blow2/blownm0008.dds 10
+45-HIT2
+0 8
+eff/blow3/blow3001.dds 10
+eff/blow3/blow3002.dds 10
+eff/blow3/blow3003.dds 10
+eff/blow3/blow3004.dds 10
+eff/blow3/blow3005.dds 10
+eff/blow3/blow3006.dds 10
+eff/blow3/blow3007.dds 10
+eff/blow3/blow3008.dds 10
+*

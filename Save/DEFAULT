@@ -1,0 +1,14 @@
+[General]
+OutputAPI = d3d12_fl12_0
+
+[GeneralExt]
+EnableGDIHooking = true
+
+[DirectX]
+DisableMipmapping  = true
+khanaticwm         = false
+DisableAndPassThru = false
+
+[DirectXExt]
+PrimarySurfaceBatchedUpdate = true
+

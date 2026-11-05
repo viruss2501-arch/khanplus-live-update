@@ -1,0 +1,41 @@
+Device Info List
+
+Device Stats : AMD Radeon(TM) Vega 8 Graphics: Driver[Khanatic DirectX Wrapper]
+
+DeviceType :				1
+AdapterOrdinal :			0
+MaxTextureWidth :			16384
+MaxTextureHeight :			16384
+MaxVolumeExtent :			16384
+MaxTextureRepeat :			16384
+MaxTextureAspectRatio :			16384
+MaxAnisotropy :				16
+MaxVertexW :				99999997952.00
+GuardBandLeft :				-10000000.00
+GuardBandTop :				-10000000.00
+GuardBandRight :			10000000.00
+GuardBandBottom :			10000000.00
+ExtentsAdjust :				0.00
+MaxTextureBlendStages :			8
+MaxSimultaneousTextures :		8
+MaxActiveLights :			8
+MaxUserClipPlanes :			6
+MaxVertexBlendMatrices :		4
+MaxVertexBlendMatrixIndex :		255
+MaxPointSize :				8192.00
+MaxPrimitiveCount :			1048576
+MaxVertexIndex :			268435455
+MaxStreams :				16
+MaxStreamStride :			65536
+VertexShaderVersion :			fffe0101
+MaxVertexShaderConst :			256
+PixelShaderVersion :			ffff0104
+MaxPixelShaderValue :			-536870912
+
+[Resolution]		[PixelFormat]			[RefreshRate]
+1024 x 768		D3DFMT_X8R8G8B8			60 Hz
+640 x 400		D3DFMT_X8R8G8B8			60 Hz
+800 x 600		D3DFMT_X8R8G8B8			60 Hz
+1152 x 864		D3DFMT_X8R8G8B8			60 Hz
+646 x 509		D3DFMT_X8R8G8B8			60 Hz
+1280 x 960		D3DFMT_X8R8G8B8			60 Hz
